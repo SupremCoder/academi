@@ -1,0 +1,151 @@
+@import "./var.less";
+
+.btn {
+    padding: 17px 46px;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: @purple;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    box-shadow: 0 20px 50px rgba(191, 21, 108, 0.05);
+    border: 2px solid @purple;
+    gap: 16px;
+    img {
+        .whiteimg;
+        max-width: 32px;
+    }
+    &:hover {
+        background-color: @blue;
+        border-color: @blue;
+    }
+    &--outline {
+        background: transparent;
+        color: @purple;
+        img {
+            filter: unset;
+        }
+        &:hover {
+            img {
+                .whiteimg;
+            }
+            background-color: @purple;
+            color: #fff;
+            border-color: @purple;
+        }
+    }
+    &--little {
+        padding: 12px 24px;
+    }
+    &--small {
+        padding: 12px;
+        border-radius: 50%;
+        background-color: @purple;
+        img {
+            width: 24px;
+        }
+    }
+    &--grey {
+        background: @purple10;
+        color: @purple;
+        font-weight: 600;
+        border: unset;
+        padding: 19px;
+        width: 100%;
+    }
+    &--full {
+        width: 100%;
+    }
+    &--white {
+        background-color: #fff;
+        padding: 8px 24px;
+        color: @blue;
+        font-weight: 600;
+        font-size: 14px;
+        border: 0;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &--orange {
+        background-color: @orange;
+        border: 0;
+    }
+    &--circle {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 50%;
+        .dcenter;
+        &:hover {
+            background-color: @purple;
+            img {
+                opacity: 1;
+                filter: brightness(0) invert(1);
+            }
+        }
+        img {
+            width: 32px;
+            opacity: 0.6;
+        }
+        span {
+            width: 8px;
+            height: 8px;
+            background-color: @purple;
+            border-radius: 50%;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    }
+    &--blue {
+        padding: 0;
+        .dcenter;
+        background-color: @dblue;
+        border-color: @dblue;
+        &:hover {
+            border-color: @purple;
+        }
+        &.big {
+            img {
+                width: 32px;
+            }
+        }
+        img {
+            opacity: 1;
+            width: 16px;
+        }
+    }
+    &--email {
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        background: unset;
+        border: 2px solid @grey3;
+        img {
+            filter: unset;
+        }
+        &:hover {
+            img {
+                filter: brightness(0) invert(1);
+                opacity: 1;
+            }
+        }
+    }
+    &--nobg {
+        background: unset;
+        img {
+            width: 24px;
+            opacity: 0.6;
+        }
+        &:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+}

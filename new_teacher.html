@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <aside class="aside">
+            <a href="#" class="aside__logo">
+                <img src="./assets/icons/logo.svg" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a href="#" class="aside__link">
+                        <img src="./assets/icons/home.svg" alt="">
+                        Bosh sahifa
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="aside__link">
+                        <img src="./assets/icons/student.svg" alt="">
+                        Studentlar
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="aside__link active">
+                        <img src="./assets/icons/teacher.svg" alt="">
+                        O'qituvchilar
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="aside__link">
+                        <img src="./assets/icons/calendar.svg" alt="">
+                        Hodisalar
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="aside__link">
+                        <img src="./assets/icons/finance.svg" alt="">
+                        Moliya
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="aside__link">
+                        <img src="./assets/icons/food.svg" alt="">
+                        Ovqat
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="aside__link">
+                        <img src="./assets/icons/User.svg" alt="">
+                        Foydalanuvchi
+                    </a>
+                </li>
+                <li>
+                    <a href="chat.html" class="aside__link">
+                        <img src="./assets/icons/chat.svg" alt="">
+                        Chat
+                    </a>
+                </li>
+                <li>
+                    <a href="activity.html" class="aside__link">
+                        <img src="./assets/icons/Activity.svg" alt="">
+                        So'nggi hodisalar
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="wrapper">
+            <header class="header">
+                <h1>Yangi o'qituvchi</h1>
+                <div class="form__search ml-a">
+                    <button>
+                        <img src="./assets/icons/Search.svg" alt="">
+                    </button>
+                    <input type="text" placeholder="Qidirish">
+
+                </div>
+                <button class="btn--circle ml-40">
+                    <img src="./assets/icons/bell.svg" alt="">
+                    <span></span>
+                </button>
+                <button class="btn--circle ml-20">
+                    <img src="./assets/icons/gear.svg" alt="">
+                </button>
+                <div class="header__user d-flex ml-20 aic">
+                    <div class="right">
+                        <div class="fz14 semibold blue">Nabila A.</div>
+                        <div class="fz14 grey3">Admin</div>
+                    </div>
+                    <button class="ml-20">
+                        <img src="./assets/img/avatar.jpg" alt="">
+                    </button>
+                </div>
+            </header>
+            <section>
+                <form action="" class="form">
+                    <div class="form__title">Shaxsiy ma'lumotlar</div>
+                    <div class="white__box white__box--notop mb-40">
+                        <div class="col-11">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-24">
+                                        <label for="" class="form__label">Ismi *</label>
+                                        <input type="text" class="form__input" placeholder="Jasurbek" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-24">
+                                        <label for="" class="form__label">Familiya *</label>
+                                        <input type="text" class="form__input" placeholder="Tolibov" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-24">
+                                        <label for="" class="form__label">E-mail *</label>
+                                        <input type="text" class="form__input" placeholder="jasurbektolibov@gmail.com"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-24">
+                                        <label for="" class="form__label">Telefon</label>
+                                        <input type="number" class="form__input" placeholder="+998917273918" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-24">
+                                        <label for="" class="form__label">Yashash manzil *</label>
+                                        <textarea type="text" class="form__input form__input--big"
+                                            placeholder="Toshkent shahar, Amir Temur ko'chasi 103-uy"
+                                            required></textarea>
+                                        <div class="form__counter mt-10">0/2000</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-24">
+                                        <label for="" class="form__label">Rasm</label>
+                                        <div class="form__file">
+                                            <input type="file" name="" id="rasm">
+                                            <label for="rasm">
+                                                Rasm faylingizni tashlang yoki yuklash uchun tanlang
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-24">
+                                        <label for="" class="form__label">Tug'ilgan sana *</label>
+                                        <input type="date" name="" id="" class="form__input" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-24">
+                                        <label for="" class="form__label">Tug'ilgan joy *</label>
+                                        <select name="" id="" class="form__input" required>
+                                            <option value="">Toshkent shahar</option>
+                                            <option value="">Buxoro shahar</option>
+                                            <option value="">Samarqand shahar</option>
+                                            <option value="">Andijon shahar</option>
+                                            <option value="">Xiva shahar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__title">Ta'lim</div>
+                    <div class="white__box white__box--notop mb-40">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-24">
+                                    <label for="" class="form__label">Universitet</label>
+                                    <input type="text" class="form__input" placeholder="TATU" required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-24">
+                                    <label for="" class="form__label">Ta'lim darajasi *</label>
+                                    <select name="" id="" class="form__input" required>
+                                        <option value="">Bakalavr</option>
+                                        <option value="">Magistr</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-24">
+                                    <label for="" class="form__label">O'quv boshlanish va tugash sanasi *</label>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input type="date" name="" id="" class="form__input" required>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="date" name="" id="" class="form__input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-24">
+                                    <label for="" class="form__label">Shahar/Tuman</label>
+                                    <input type="text" class="form__input" placeholder="Kitob tumani" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex aic jce">
+                            <button class="btn btn--outline">
+                                Saqlash
+                            </button>
+                            <button class="btn ml-20">Jo'natish</button>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>

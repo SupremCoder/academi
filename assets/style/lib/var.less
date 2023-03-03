@@ -1,0 +1,47 @@
+@purple: #4d44b5;
+@orange: #fb7d5b;
+@yellow: #fcc43e;
+@blue: #303972;
+@green: #4cbc9a;
+@red: #ff4550;
+@grey1: #f5f5f5;
+@grey2: #c1bbeb;
+@grey3: #a098ae;
+@grey4: #dbdbdb;
+@lgrey: #f3f4ff;
+@dblue: #363b64;
+
+@linear1: linear-gradient(
+    180deg,
+    #fb7d5b - 242.86%,
+    rgba(251, 125, 91, 0) 100%
+);
+@linear2: linear-gradient(
+    180deg,
+    #fcc43e - 241.95%,
+    rgba(252, 196, 62, 0) 100%
+);
+@linear3: linear-gradient(178.76deg, #4d44b5 - 47.98%, #303972 163.51%);
+
+@purple10: rgba(77, 68, 181, 0.1);
+
+.fb(@width, @padding: 20px) {
+    flex-basis: @width;
+    width: @width;
+    max-width: @width;
+    padding: 0px @padding;
+}
+.whiteimg {
+    filter: brightness(0) invert(1);
+}
+
+.dcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dspace {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
