@@ -1126,6 +1126,22 @@ ul.disk li {
   margin-left: -13px;
   margin-right: -13px;
 }
+.tabs {
+  padding: 0 32px;
+  border-bottom: 2px solid #c1bbeb;
+}
+.tabs button {
+  transform: translateY(2px);
+  padding: 16px 24px;
+  font-weight: 600;
+  color: #a098ae;
+  font-size: 14px;
+  border-bottom: 4px solid transparent;
+}
+.tabs button.active {
+  color: #4d44b5;
+  border-bottom-color: #4d44b5;
+}
 .title {
   font-size: 24px;
   font-weight: 700;
@@ -1167,12 +1183,22 @@ section.havefilter {
   height: calc(100% - 172px);
   padding-bottom: 30px;
 }
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+  padding-top: 32px;
+}
 .white__box {
   background-color: #fff;
   padding: 30px;
   border-radius: 20px;
   overflow: auto;
   height: 100%;
+}
+.white__box--nopaddingtop {
+  padding-top: 0;
 }
 .white__box--nopadding {
   padding: 0;
@@ -1583,6 +1609,9 @@ table.table__full tr:hover {
   background-color: #c1bbeb;
   color: #fff;
 }
+table.table__full tr:hover .chart__bar {
+  border-color: #fff;
+}
 table.table__full td,
 table.table__full th {
   padding: 32px 15px 25px;
@@ -1803,4 +1832,22 @@ img.avatar {
   object-fit: cover;
   margin-right: 16px;
   display: inline-block;
+}
+img.big {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 18px;
+}
+.chart__bar {
+  font-size: 14px;
+  font-weight: 600;
+  color: #363b64;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 6px solid #c1bbeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
