@@ -162,6 +162,12 @@ body {
   max-width: 50%;
   padding: 0px 20px;
 }
+.col-7 {
+  flex-basis: 58.33%;
+  width: 58.33%;
+  max-width: 58.33%;
+  padding: 0px 20px;
+}
 .col-8 {
   flex-basis: 66.66%;
   width: 66.66%;
@@ -1206,7 +1212,7 @@ section {
   padding-right: 25px;
 }
 section.opendialog {
-  width: calc(100% - 468px);
+  width: calc(100% - 403px);
 }
 section.havefilter {
   height: calc(100% - 172px);
