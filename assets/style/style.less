@@ -12,10 +12,10 @@ body {
 
 @import "./lib/var.less";
 @import "./lib/grid.less";
+@import "./lib/badge.less";
 @import "./lib/text.less";
 
 @import "./lib/button.less";
-@import "./lib/badge.less";
 @import "./lib/form.less";
 
 .d-flex {
@@ -486,16 +486,16 @@ section {
 .dialog {
     position: absolute;
     height: 100vh;
-    width: 468px;
+    width: 403px;
     right: 0;
     top: 0;
     background-color: #fff;
-    padding: 150px 50px 30px 32px;
+    padding: 150px 8px 30px 30px;
     overflow: auto;
     &:before {
         content: "";
         width: inherit;
-        height: 200px;
+        height: 150px;
         position: fixed;
         top: 0;
         right: 0;
@@ -503,7 +503,7 @@ section {
         display: block;
         background: linear-gradient(
             180deg,
-            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 1) 70%,
             rgba(255, 255, 255, 0) 100%
         );
     }
@@ -630,6 +630,17 @@ table {
     }
     &.table {
         &__full {
+            &.firstno {
+                td {
+                    &:first-child {
+                        padding-left: 0;
+                        width: auto;
+                    }
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
             thead {
                 position: sticky;
                 top: 0;
@@ -880,6 +891,12 @@ img {
         width: 150px;
         height: 150px;
         border-radius: 18px;
+    }
+    &.full {
+        height: 160px;
+        width: 100%;
+        border-radius: 18px;
+        object-fit: cover;
     }
 }
 

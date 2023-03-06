@@ -9,12 +9,33 @@
     font-size: 14px;
     font-weight: 500;
     .dcenter;
+    &.hide {
+        opacity: 0;
+    }
     &--large {
         width: 56px;
         height: 56px;
         background-color: @red;
         img {
             width: 32px;
+            filter: brightness(0) invert(1);
+        }
+    }
+    &--normal {
+        width: 48px;
+        height: 48px;
+        img {
+            width: 24px;
+            .whiteimg;
+        }
+    }
+    &--huge {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        .dcenter;
+        img {
+            width: 40px;
             filter: brightness(0) invert(1);
         }
     }

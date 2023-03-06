@@ -42,6 +42,9 @@ body {
 .ml-40 {
   margin-left: 40px;
 }
+.ml-80 {
+  margin-left: 80px;
+}
 .mr-a {
   margin-right: auto;
 }
@@ -529,6 +532,101 @@ body {
     padding: 0px 20px;
   }
 }
+.notification {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fb7d5b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notification.hide {
+  opacity: 0;
+}
+.notification--large {
+  width: 56px;
+  height: 56px;
+  background-color: #ff4550;
+}
+.notification--large img {
+  width: 32px;
+  filter: brightness(0) invert(1);
+}
+.notification--normal {
+  width: 48px;
+  height: 48px;
+}
+.notification--normal img {
+  width: 24px;
+  filter: brightness(0) invert(1);
+}
+.notification--huge {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notification--huge img {
+  width: 40px;
+  filter: brightness(0) invert(1);
+}
+.notification.big {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notification.big img {
+  width: 24px;
+  filter: brightness(0) invert(1);
+}
+.notification.blue {
+  background-color: #303972;
+}
+.notification.lpurple {
+  background: rgba(77, 68, 181, 0.1);
+}
+.notification.lpurple img {
+  filter: unset;
+}
+.status {
+  font-size: 18px;
+  font-weight: 600;
+  color: #a098ae;
+}
+.status--success {
+  color: #4cbc9a;
+}
+.status--warning {
+  color: #fcc43e;
+}
+.status--danger {
+  color: #ff4550;
+}
+.badge {
+  padding: 9px 25px;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  background-color: #4d44b5;
+}
+.badge--danger {
+  background-color: #fb7d5b;
+}
+.badge--warning {
+  background-color: #fcc43e;
+}
+.badge--success {
+  background-color: #4cbc9a;
+}
 .fz12 {
   font-size: 12px;
 }
@@ -618,6 +716,9 @@ body {
 }
 .bg-red {
   background-color: #ff4550;
+}
+.bg-dblue {
+  background-color: #363b64;
 }
 .data {
   color: #a098ae;
@@ -774,78 +875,6 @@ h1 {
 }
 .btn--nobg:hover img {
   opacity: 1;
-}
-.notification {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #fb7d5b;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.notification--large {
-  width: 56px;
-  height: 56px;
-  background-color: #ff4550;
-}
-.notification--large img {
-  width: 32px;
-  filter: brightness(0) invert(1);
-}
-.notification.big {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.notification.big img {
-  width: 24px;
-  filter: brightness(0) invert(1);
-}
-.notification.blue {
-  background-color: #303972;
-}
-.notification.lpurple {
-  background: rgba(77, 68, 181, 0.1);
-}
-.notification.lpurple img {
-  filter: unset;
-}
-.status {
-  font-size: 18px;
-  font-weight: 600;
-  color: #a098ae;
-}
-.status--success {
-  color: #4cbc9a;
-}
-.status--warning {
-  color: #fcc43e;
-}
-.status--danger {
-  color: #ff4550;
-}
-.badge {
-  padding: 9px 25px;
-  border-radius: 40px;
-  color: #fff;
-  font-size: 14px;
-  display: inline-block;
-  background-color: #4d44b5;
-}
-.badge--danger {
-  background-color: #fb7d5b;
-}
-.badge--warning {
-  background-color: #fcc43e;
-}
-.badge--success {
-  background-color: #4cbc9a;
 }
 button,
 input,
@@ -1465,23 +1494,23 @@ section.havefilter {
 .dialog {
   position: absolute;
   height: 100vh;
-  width: 468px;
+  width: 403px;
   right: 0;
   top: 0;
   background-color: #fff;
-  padding: 150px 50px 30px 32px;
+  padding: 150px 8px 30px 30px;
   overflow: auto;
 }
 .dialog:before {
   content: "";
   width: inherit;
-  height: 200px;
+  height: 150px;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1;
   display: block;
-  background: linear-gradient(180deg, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #ffffff 70%, rgba(255, 255, 255, 0) 100%);
 }
 .dialog__activity--item {
   border-left: 2px solid #c1bbeb;
@@ -1594,6 +1623,13 @@ table tr:hover td * {
 table th,
 table td {
   padding: 12px 0;
+}
+table.table__full.firstno td:first-child {
+  padding-left: 0;
+  width: auto;
+}
+table.table__full.firstno td:last-child {
+  padding-right: 0;
 }
 table.table__full thead {
   position: sticky;
@@ -1838,6 +1874,12 @@ img.big {
   width: 150px;
   height: 150px;
   border-radius: 18px;
+}
+img.full {
+  height: 160px;
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
 }
 .chart__bar {
   font-size: 14px;
